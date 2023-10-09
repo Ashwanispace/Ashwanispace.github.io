@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        h1{
+            color: rgb(50, 5, 92);
+            display: inline-block;
+            text-align: center;
+            height: 100px;
+            width: 400px;
+            border: 5px solid rgb(63, 3, 93);
+            border-radius: 7px;
+            background-color: rgb(194, 154, 232);
+
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT 1</title>
+
+    <script>
+        
+       document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('#red').onclick = function(){
+            document.querySelector('#name').style.backgroundColor = 'red';
+        } ;
+
+        document.querySelector('#green').onclick = function(){
+            document.querySelector('#name').style.backgroundColor = 'green';
+        };
+
+        document.querySelector('#pink').onclick = function(){
+            document.querySelector('#name').style.backgroundColor = 'pink';
+        };
+        }
+
+
+       );
+        
+    </script>
+</head>
+<body>
+    
+    <h1 id="name">JAVASCRIPT</h1>
+    <button id="red">Red</button> 
+    <button id="green">Green</button> 
+    <button id="pink">Pink</button> 
+</body>
+</html>
